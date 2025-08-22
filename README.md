@@ -1,29 +1,94 @@
-🎬 Movie Radar
+# 🎬 Movie Radar
 
-✨ Your Personal Movie Recommendation & Discovery Platform
+> *Discover. Explore. Watch.*  
+Movie Radar is a full-stack movie recommendation system designed to help users find the perfect movie to watch.  
+With a modern UI, personalized watchlist, and real-time search, Movie Radar delivers a **seamless Netflix-style experience** — but smarter.
 
-🚀 Overview
+---
 
-Movie Radar is a full-stack web application designed to help users:
+## ✨ Features
 
-   🔍 Discover movies by genre, popularity, and trends
+✅ **User Authentication**  
+- Sign up / Log in with email, password. 
 
-    🎥 Watch trailers instantly by hovering over posters
+✅ **Smart Search & Browse**  
+- Search movies by title.  
+- Browse by genres (Action, Drama, Comedy, Sci-Fi, etc.).  
+- "See All" option for genre-wise deep dive.  
 
-    ⭐ Save movies to a personalized Watchlist
+✅ **Movie Details Page**  
+- Description, release date, streaming platforms (YouTube, Netflix, etc.).  
+- Hover over a poster to instantly preview trailers.
 
-    🔑 Securely Login / Signup with Google or Email
+✅ **Personalized Watchlist**  
+- Save movies for later.  
+- Manage your favorites in one place.  
 
-    🎬 Explore detailed movie pages with streaming platform availability
+✅ **Clean & Modern UI**  
+- Built with **React + Vite** frontend.  
+- Responsive & minimal design.  
+- Smooth animations.
 
-Built using React + Vite (Frontend) and FastAPI (Backend), it integrates with external APIs and datasets to provide a real-time movie browsing experience.
+✅ **Fast & Scalable Backend**  
+- Powered by **FastAPI**.  
+- Movie data from [Kaggle dataset → JSON integration].  
 
-✨ Features
+---
 
-✅ Search movies with a YouTube-style search bar
-✅ Genre-based navigation with "See All" options
-✅ Secure Login / Signup (Google + Email authentication)
-✅ Watchlist management for tracking your favorites
-✅ Integration with platforms like Netflix, YouTube, etc.
-✅ Backend powered by FastAPI + Database
+## 🛠️ Tech Stack
 
+**Frontend:** React (Vite), Tailwind CSS, ShadCN/UI, Framer Motion  
+**Backend:** FastAPI  
+**Authentication:** Email/Password
+**Hosting/Tools:** VS Code, GitHub  
+
+---
+
+### 🔹 LoginPage  
+![Loginpage](./screenshots/loginpage.png)  
+
+### 🔹 HomePage  
+![HomePage](./screenshots/homepage.png) 
+`` 
+### 🔹 HomePage  
+![HomePage](./screenshots/homepage.png)  
+
+
+### 🔹 GenrePage  
+![genreDetails](./screenshots/Comedypage.png)  
+![genreDetails](./screenshots/Excitedpage.png)  
+![genreDetails](./screenshots/Searchpage.png)  
+![genreDetails](./screenshots/Outputpage.png)  
+  
+ 
+### 🔹 Watchlist  
+![Watchlist](./screenshots/Watchlist.png)  
+ 
+
+
+## 🚀 Getting Started
+
+Follow these steps to set up **Movie Radar** locally.
+
+### 1️⃣ Clone the repository
+```bash
+git clone https://github.com/Varshitha152004/Movie-Radar.git
+cd Movie-Radar
+
+### 2️⃣ Install dependencies
+npm install
+
+### 3️⃣ Run the frontend
+npm run dev
+Now open http://localhost:5173
+
+###🌱 Future Improvements
+-AI-powered personalized recommendations
+-User reviews and ratings
+-Dark mode toggle
+
+### 🤝 Contributing
+
+-Contributions, issues, and feature requests are welcome!
+
+⭐ If you like this project, give it a star! ⭐
