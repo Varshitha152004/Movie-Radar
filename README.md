@@ -1,12 +1,29 @@
-# React + Vite
+🎬 Movie Radar
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+✨ Your Personal Movie Recommendation & Discovery Platform
 
-Currently, two official plugins are available:
+🚀 Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Movie Radar is a full-stack web application designed to help users:
 
-## Expanding the ESLint configuration
+   🔍 Discover movies by genre, popularity, and trends
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+    🎥 Watch trailers instantly by hovering over posters
+
+    ⭐ Save movies to a personalized Watchlist
+
+    🔑 Securely Login / Signup with Google or Email
+
+    🎬 Explore detailed movie pages with streaming platform availability
+
+Built using React + Vite (Frontend) and FastAPI (Backend), it integrates with external APIs and datasets to provide a real-time movie browsing experience.
+
+✨ Features
+
+✅ Search movies with a YouTube-style search bar
+✅ Genre-based navigation with "See All" options
+✅ Secure Login / Signup (Google + Email authentication)
+✅ Watchlist management for tracking your favorites
+✅ Integration with platforms like Netflix, YouTube, etc.
+✅ Backend powered by FastAPI + Database
+
