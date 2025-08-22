@@ -1,0 +1,219 @@
+/* Navbar Container */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background: black;
+  color: white;
+  height: 80px;
+  width: 100%;
+}
+
+/* Logo */
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: yellow;
+  text-decoration: none;
+}
+
+/* Search Container */
+.search-container {
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50px;
+  padding: 6px 12px;
+}
+
+.search-bar {
+  border: none;
+  background: transparent;
+  color: white;
+  outline: none;
+  padding: 8px;
+  width: 250px;
+}
+
+.search-bar::placeholder {
+  color: #ccc;
+}
+
+.search-btn {
+  background: yellow;
+  border: none;
+  border-radius: 50%;
+  padding: 8px 10px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Navigation Right Section */
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 100px;
+  margin-right: 100px;
+}
+
+.nav-item {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-item:hover {
+  color: yellow;
+}
+
+/* Profile Dropdown */
+.profile-dropdown {
+  position: relative;
+}
+
+.profile-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+}
+
+/* Profile Picture */
+.profile-pic {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid white;
+  cursor: pointer;
+}
+
+/* Default Avatar Styling */
+.default-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: black; /* Black background */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  border: 2px solid white; /* White border */
+  cursor: pointer;
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+  position: absolute;
+  top: 45px;
+  right: 0;
+  background: white;
+  color: black;
+  border-radius: 5px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+  min-width: 150px;
+}
+
+.dropdown-item {
+  padding: 10px 15px;
+  text-decoration: none;
+  display: block;
+  color: black;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.dropdown-item:hover {
+  background: #f0f0f0;
+}
+
+.logout-btn {
+  background: none;
+  border: none;
+  width: 100%;
+  text-align: left;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-weight: bold;
+  color: red;
+}
+/* Search Results Container */
+.search-results-container {
+  position: absolute;
+  top: 85px; /* Increased gap between search bar and results */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #121212; /* Deep black background */
+  width: 400px; /* Slightly wider for better readability */
+  max-height: 300px; /* Limited height for scrolling */
+  overflow-y: auto;
+  border-radius: 8px;
+  box-shadow: 0px 4px 12px rgba(255, 255, 255, 0.15);
+  padding: 10px;
+  z-index: 1000;
+}
+
+/* Search Results Wrapper */
+.search-results {
+  display: flex;
+  flex-direction: column;
+  gap: 8px; /* Added space between each movie result */
+}
+
+/* Each Search Result Item */
+.search-result-item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+.search-result-item:hover {
+  background: rgba(255, 255, 255, 0.12);
+}
+
+/* Movie Poster */
+.search-result-item img {
+  width: 50px; /* Small but visible */
+  height: 70px;
+  border-radius: 5px;
+  object-fit: cover;
+  margin-right: 12px;
+}
+
+/* Movie Details */
+.movie-details {
+  display: flex;
+  flex-direction: column;
+  color: rgb(245, 244, 244);
+  font-size: 14px;
+}
+
+/* Movie Title */
+.movie-title {
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 3px;
+}
+
+/* Movie Rating */
+.movie-rating {
+  font-size: 14px;
+  color: gold;
+}
+
+/* No Results Found */
+.no-results {
+  color: #bbb;
+  font-size: 14px;
+  text-align: center;
+  padding: 14px;
+  font-weight: bold;
+}

@@ -1,0 +1,122 @@
+/* Watchlist Page */
+.watchlist-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100vw;
+  min-height: 100vh;
+  background-color: white;
+  padding: 20px;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  width: 100%;
+  text-align: left;
+}
+
+/* Movies Row */
+.movies-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  padding: 20px;
+  width: 100%;
+  justify-content: flex-start;
+}
+
+/* Movie Card */
+.movie-card {
+  flex: 1 1 calc(16.66% - 15px); /* 6 per row */
+  max-width: 200px;
+  min-width: 180px;
+  height: 300px;
+  background-color: #f1f1f1;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative; /* To position the remove button inside the card */
+}
+
+/* Movie Poster */
+.movie-card img {
+  width: 100%;
+  height: 80%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 10px 10px 0 0;
+}
+
+/* Movie Title */
+.movie-title {
+  font-size: 16px;
+  font-weight: bold;
+  color: black;
+  padding: 10px;
+  text-align: left;
+  background-color: white;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Remove Button with Trash Bin Emoji */
+.remove-btn {
+  position: absolute;
+  bottom: 0; /* Position it at the bottom of the movie card */
+  right: 0; /* Position it at the right edge of the card */
+  font-size: 28px; /* Adjust emoji size to be more visible */
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 1; /* Ensure it's on top */
+  transition: transform 0.2s ease-in-out;
+}
+
+/* Remove Button Hover Effect */
+.remove-btn:hover {
+  transform: scale(1.2); /* Slight scale effect on hover */
+  color: red; /* Change color on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .movie-card {
+    flex: 1 1 calc(20% - 15px); /* 5 per row */
+  }
+}
+
+@media (max-width: 1024px) {
+  .movie-card {
+    flex: 1 1 calc(25% - 15px); /* 4 per row */
+  }
+}
+
+@media (max-width: 768px) {
+  .movie-card {
+    flex: 1 1 calc(33.33% - 15px); /* 3 per row */
+  }
+}
+
+@media (max-width: 480px) {
+  .movie-card {
+    flex: 1 1 calc(50% - 15px); /* 2 per row */
+  }
+}
+
+@media (max-width: 320px) {
+  .movie-card {
+    flex: 1 1 calc(100% - 15px); /* 1 per row */
+    height: 200px;
+  }
+}
+
+body {
+  overflow-x: hidden;
+}

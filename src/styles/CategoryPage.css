@@ -1,0 +1,152 @@
+.category-page {
+  width: 100vw;
+  min-height: 100vh;
+  background-color: white;
+  padding: 20px;
+  text-align: left; /* Align text and content to the left */
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #333;
+  font-weight: 600;
+  margin-left: 5vw; /* Align heading to the left */
+}
+
+/* Movies Grid: Start from Left */
+.movies-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start; /* Align movies to the left */
+  gap: 40px; /* Proper space between movies */
+  padding-left: 5vw;
+  padding-right: 5vw;
+  margin: 0 auto;
+  max-width: 1400px;
+  box-sizing: border-box;
+}
+
+/* Movie Card */
+.movie-card {
+  background: #f1f1f1;
+  padding: 12px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+  width: 200px; /* Fixed width */
+}
+
+.movie-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Movie Image */
+.movie-image {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Movie Title */
+.movie-title {
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  color: #444;
+}
+
+/* Watchlist Button */
+.add-to-watchlist {
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+  background-color: rgba(255, 255, 255, 0.8);
+  color: black;
+  border: none;
+  padding: 8px;
+  border-radius: 50%;
+  font-size: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  z-index: 1;
+  outline: none;
+}
+
+.add-to-watchlist:hover {
+  background-color: white;
+  transform: scale(1.2);
+}
+
+/* Responsive Fixes */
+@media (max-width: 1200px) {
+  .movies-grid {
+    gap: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .movies-grid {
+    gap: 25px;
+  }
+
+  .movie-card {
+    width: 180px;
+  }
+
+  .movie-image {
+    height: 250px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .movies-grid {
+    gap: 20px;
+  }
+
+  .movie-card {
+    width: 160px;
+  }
+
+  .movie-image {
+    height: 220px;
+  }
+
+  .movie-title {
+    font-size: 14px;
+  }
+}
+.add-to-watchlist {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 30px;
+  height: 30px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s;
+}
+
+.add-to-watchlist:hover {
+  background-color: rgba(255, 0, 0, 0.7);
+}
