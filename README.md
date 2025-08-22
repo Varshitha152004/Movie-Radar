@@ -56,7 +56,7 @@ With a modern UI, personalized watchlist, and real-time search, Movie Radar deli
 
 ### 🔹 GenrePage  
 ![genreDetails](./screenshots/Comedypage.png)  
-![genreDetails](./screenshots/Excitedpage.png)  
+![genreDetails](./screenshots/ExcitedPage.png)  
 ![genreDetails](./screenshots/Searchpage.png)  
 ![genreDetails](./screenshots/Outputpage.png)  
   
