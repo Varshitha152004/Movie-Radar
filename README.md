@@ -49,7 +49,7 @@ With a modern UI, personalized watchlist, and real-time search, Movie Radar deli
 
 ### 🔹 HomePage  
 ![HomePage](./screenshots/homepage.png) 
-`` 
+ 
 ### 🔹 ProfilePage  
 ![ProfilePage](./screenshots/Profile.png)  
 
@@ -81,6 +81,7 @@ npm install
 ### 3️⃣ Run the frontend
 npm run dev
 Now open http://localhost:5173
+```
 
 ###🌱 Future Improvements
 -AI-powered personalized recommendations
