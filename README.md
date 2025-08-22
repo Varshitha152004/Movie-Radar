@@ -50,8 +50,8 @@ With a modern UI, personalized watchlist, and real-time search, Movie Radar deli
 ### 🔹 HomePage  
 ![HomePage](./screenshots/homepage.png) 
 `` 
-### 🔹 HomePage  
-![HomePage](./screenshots/homepage.png)  
+### 🔹 ProfilePage  
+![ProfilePage](./screenshots/Profile.png)  
 
 
 ### 🔹 GenrePage  
